@@ -15,10 +15,16 @@ body {
 .wrn-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
+    width: 100%;
     overflow: hidden;
     position: sticky;
     top: 0;
+    background-image: url('img/bkg.jpg');
+    background-size: cover;
+    background-position: bottom;
 }
 
 .wrn-under {
@@ -62,6 +68,7 @@ body {
 .video-main {
     position: absolute;
     z-index: 1;
+    top: 0;
 }
 
 .video-intro.hide{
@@ -145,4 +152,9 @@ body {
 
 .wrn-last.hide{
     opacity: 0;
+}
+
+.wrn-middle{
+    position: relative;
+    width: 100vh;
 }
