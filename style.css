@@ -16,7 +16,7 @@ main {
 }
 
 .wrn-main {
-    height: 440vh;
+    height: 250vh;
     width: 100%;
 }
 
@@ -167,6 +167,7 @@ main {
 .wrn-middle {
     position: relative;
     width: 100vh;
+    overflow: hidden;
 }
 
 .wrn-text {

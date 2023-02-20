@@ -24,36 +24,15 @@ videoMain.addEventListener('loadeddata', () => {
         var trigger = Math.round(window.scrollY / window.innerHeight * 1000) / 1000;
         //console.log(trigger)
 
-        time = Math.round(clamp(0, videoMain.duration, trigger * 15)*10)/10;
-
-        console.log(time)
-
-        if (trigger > mTrigger) {
-            if (time > videoMain.currentTime) {
-                videoMain.currentTime = time;
-
-            }
-
-        } else {
-            videoMain.currentTime = time;
-            if (videoMain.currentTime < videoMain.duration) {
-                //videoMain.play()
-            }
-
-        }
-
-        if (videoMain.currentTime == videoMain.duration) {
-            last.classList.remove('hide')
-        } else {
-            last.classList.add('hide')
-        }
 
 
-        content.style.opacity = range(3.5, 4, 1, 0, trigger);
-        corps.style.transform = `translateY(${range(3, 5, 0, -80, trigger)}%)`;
+        content.style.opacity = range(1.5, 2, 1, 0, trigger);
+        corps.style.transform = `translateY(${range(.5, 3.5, 0, -80, trigger)}%)`;
+        bouro.style.transform = `translate(${range(.5, 3.5, 0, -10, trigger)}%,${range(.5, 3.5, 0, 15, trigger)}%)`;
 
-        bouro.style.transform = `translate(${range(3, 5, 0, -10, trigger)}%,${range(3, 5, 0, 15, trigger)}%)`;
-
+        last.style.transform=`scale(${range(0, .5, 5, 1, trigger)}) translate(${range(0, .5, 0, 0, trigger)}%, ${range(0, .5, -3, 0, trigger)}%)`
+        last.style.opacity=range(0, .25, 0, 1, trigger);
+        last.style.filter=`blur(${range(0, .6, 5, 0, trigger)}px)`;
 
         mTrigger = trigger;
     })
