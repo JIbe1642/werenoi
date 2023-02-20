@@ -30,9 +30,11 @@ main {
     overflow: hidden;
     position: sticky;
     top: 0;
+    /*
     background-image: url('img/bkg.jpg');
     background-size: cover;
     background-position: bottom;
+    */
 }
 
 .wrn-under {
@@ -165,4 +167,14 @@ main {
 .wrn-middle {
     position: relative;
     width: 100vh;
+}
+
+.wrn-text {
+    position: absolute;
+    bottom: 22px;
+    color: #a48e45;
+    z-index: 100;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
 }

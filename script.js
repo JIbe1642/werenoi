@@ -35,7 +35,7 @@ videoMain.addEventListener('loadeddata', () => {
         } else {
             videoMain.currentTime = time;
             if (videoMain.currentTime < videoMain.duration) {
-                videoMain.play()
+                //videoMain.play()
             }
 
         }
