@@ -22,9 +22,11 @@ videoMain.addEventListener('loadeddata', () => {
     window.addEventListener('scroll', () => {
 
         var trigger = Math.round(window.scrollY / window.innerHeight * 1000) / 1000;
-        console.log(trigger)
+        //console.log(trigger)
 
-        time = clamp(0, videoMain.duration, trigger * 15);
+        time = Math.round(clamp(0, videoMain.duration, trigger * 15)*10)/10;
+
+        console.log(time)
 
         if (trigger > mTrigger) {
             if (time > videoMain.currentTime) {
