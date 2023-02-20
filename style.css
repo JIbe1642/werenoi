@@ -3,6 +3,14 @@ body {
     background: black;
 }
 
+.siteLayer {
+    overflow: visible;
+}
+
+main {
+    background: transparent;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -71,7 +79,7 @@ body {
     top: 0;
 }
 
-.video-intro.hide{
+.video-intro.hide {
     opacity: 0;
 }
 
@@ -128,7 +136,7 @@ body {
 
 }
 
-.wrn-last{
+.wrn-last {
     position: relative;
     z-index: 3;
     height: 80%;
@@ -137,7 +145,7 @@ body {
     object-position: top;
 }
 
-.wrn-last img{
+.wrn-last img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -145,16 +153,16 @@ body {
 }
 
 .wrn-bouro,
-.wrn-body{
+.wrn-body {
     position: absolute !important;
-    top:0;
+    top: 0;
 }
 
-.wrn-last.hide{
+.wrn-last.hide {
     opacity: 0;
 }
 
-.wrn-middle{
+.wrn-middle {
     position: relative;
     width: 100vh;
 }
